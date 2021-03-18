@@ -37,6 +37,9 @@ BEGIN
 
 		FETCH NEXT FROM cPortfolio INTO @TradeValue, @ClientSectorId
 	END
+	
+	CLOSE cPortfolio
+	DEALLOCATE cPortfolio
 
 	RETURN
 END
